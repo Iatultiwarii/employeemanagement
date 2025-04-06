@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
@@ -14,28 +14,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px; /* Reduce spacing between elements */
+    gap: 5px; 
     padding: 0;
     margin: 0;
 }
-
 .profile-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3px; /* Reduce vertical gap */
-    padding: 5px 10px; /* Reduce padding */
+    gap: 3px; 
+    padding: 5px 10px; 
 }
-
 .editable-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2px; /* Minimize spacing */
+    gap: 2px; 
 }
-
 .editable-name {
-    font-size: 20px; /* Adjust font size */
+    font-size: 20px;
     font-weight: bold;
     border: none;
     background: none;
@@ -45,7 +42,7 @@ body {
 }
 
 .non-editable {
-    margin: 0; /* Remove default spacing */
+    margin: 0;
     font-size: 16px;
     color: #333;
 }
@@ -54,7 +51,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2px; /* Reduce spacing */
+    gap: 2px; 
     margin: 0;
     padding: 0;
 }
@@ -67,25 +64,21 @@ body {
     display: inline-block;
     margin: 0;
 }
-
 .editable-input {
     width: auto;
     font-size: 14px;
     padding: 3px 8px;
     margin: 0;
 }
-
 .password-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     width: 100%;
 }
-
 .password-container .input-group {
     width: 48%;
 }
-
 .input-group input {
     width: 100%;
     padding: 10px;
@@ -97,7 +90,7 @@ body {
     color: red;
     font-size: 14px;
     margin-top: 5px;
-    display: none; /* Initially hidden */
+    display: none; 
 }
 .info-message {
     font-size: 14px;
@@ -116,7 +109,6 @@ body {
     border-radius: 12px;
     background-color: #fdfbfb;
 }
-/* Form Container */
 #signupForm {
     background-color: white;
     padding: 30px;
@@ -126,25 +118,21 @@ body {
     max-width: 700px;
     box-sizing: border-box;
 }
-
 #signupForm h2 {
     text-align: center;
     color: #2c3e50;
     margin-bottom: 25px;
 }
 
-/* Form Rows and Columns */
+
 .form-row {
     display: flex;
     gap: 20px;
     margin-bottom: 15px;
 }
-
 .column {
     flex: 1;
 }
-
-/* Input Fields */
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -168,16 +156,12 @@ select:focus {
     border-color: #3498db;
     outline: none;
 }
-
-/* Labels */
 label {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
     color: #2c3e50;
 }
-
-/* Buttons */
 button[type="submit"],
 #addQualification,
 #addExperience,
@@ -199,15 +183,12 @@ button[type="submit"]:hover,
 #customUploadButton:hover {
     background-color: #2980b9;
 }
-
-/* Profile Picture Section */
 #profilePicContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
 }
-
 #profilePreview {
     width: 120px;
     height: 120px;
@@ -232,8 +213,6 @@ button[type="submit"]:hover,
     width: 150px;
     text-align: center;
 }
-/* Add these styles to your existing CSS */
-
 #profilePicContainer {
     display: flex;
     flex-direction: column;
@@ -241,9 +220,6 @@ button[type="submit"]:hover,
     margin-bottom: 20px;
     cursor: pointer;
 }
-/* styles.css - Add these styles to your existing file */
-
-/* Main Container Styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
@@ -262,22 +238,18 @@ body {
     padding: 20px;
     box-sizing: border-box;
 }
-
-/* Form Styles */
 #loginForm {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-
 #loginForm h2 {
     text-align: center;
     color: #2c3e50;
     margin-bottom: 25px;
 }
 
-/* Input Fields */
 #loginForm input[type="email"],
 #loginForm input[type="password"] {
     width: 100%;
@@ -296,7 +268,6 @@ body {
     outline: none;
 }
 
-/* Button Styles */
 #loginForm button[type="submit"] {
     width: 100%;
     background-color: #3498db;
@@ -314,7 +285,6 @@ body {
     background-color: #2980b9;
 }
 
-/* Error Message Styles */
 .error {
     color: #e74c3c;
     background-color: #fde8e8;
@@ -332,8 +302,6 @@ body {
     margin-bottom: 15px;
     display: block;
 }
-
-/* Link Styles */
 #loginForm a {
     color: #3498db;
     text-decoration: none;
@@ -376,13 +344,11 @@ body {
     font-size: 14px;
     text-align: center;
 }
-/* Dynamic Fields */
 #qualifications,
 #experiences {
     margin-bottom: 15px;
 }
 
-/* Link */
 a {
     color: #3498db;
     text-decoration: none;
@@ -392,7 +358,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .form-row {
         flex-direction: column;

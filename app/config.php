@@ -1,7 +1,6 @@
 <?php
 class Config {
-    private $conn;
-    
+    private $conn; 
     public function __construct() {
 $this->conn = new mysqli('localhost', 'root', '', 'Employee_management');
         if ($this->conn->connect_error) {
@@ -27,11 +26,9 @@ $this->conn = new mysqli('localhost', 'root', '', 'Employee_management');
     public function escape($data) {
         return $this->conn->real_escape_string(htmlspecialchars(stripslashes(trim($data))));
     }
-    
     public function getInsertId() {
         return $this->conn->insert_id;
     }
-    
     public function error() {
         return $this->conn->error;
     }

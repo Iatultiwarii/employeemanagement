@@ -3,8 +3,6 @@ session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 ob_start();
-
-
 require __DIR__ . '/config.php';
 require __DIR__ . '/models/User.php';
 
@@ -36,7 +34,8 @@ try {
                 die('404 Page Not Found');
             }
     }
-} catch (Exception $e) {
+}
+catch (Exception $e) {
     error_log("Exception: " . $e->getMessage());
     http_response_code(500);
     if (file_exists(__DIR__ . '/app/views/errors/500.php')) {

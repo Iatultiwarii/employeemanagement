@@ -76,7 +76,7 @@ class AuthController {
         $file = $_FILES["profile_pic"];
         $fileExt = strtolower(pathinfo($file['name'], PATHINFO_EXTENSION));
         $allowedTypes = ["jpg", "jpeg", "png", "gif"];
-        $maxFileSize = 2 * 1024 * 1024; // 2MB
+        $maxFileSize = 2 * 1024 * 1024; 
     
         if (!in_array($fileExt, $allowedTypes)) {
             $_SESSION['error'] = "Only JPG, JPEG, PNG, GIF allowed";

@@ -20,7 +20,6 @@ if (!isset($_SESSION['user_id'])) {
         <h2>Employee Profile</h2>
         <img id="profilePic" src="<?php echo !empty($user['profile_pic']) ? $user['profile_pic'] : '/assets/images/default-profile.png'; ?>" alt="Profile Picture" width="120" style="cursor: pointer;">
         <input type="file" id="profilePicUpload" accept="image/*" style="display: none;">
-        
         <form id="profileForm">
             <div class="profile-container">
                 <div class="editable-container">
@@ -37,7 +36,6 @@ if (!isset($_SESSION['user_id'])) {
                     </div>
                 </div>
             </div>
-
             <div class="column-container">
                 <div class="column">
                     <label>Qualifications:</label>
@@ -62,7 +60,6 @@ if (!isset($_SESSION['user_id'])) {
                     </div>
                 </div>
             </div>
-
             <div class="column-container">
                 <div class="column address">
                     <label>Permanent Address:</label>

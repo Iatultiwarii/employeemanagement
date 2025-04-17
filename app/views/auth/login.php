@@ -23,6 +23,9 @@
             <button type="submit">Login</button>
             <p>Don't have an account? <a href="index.php?route=signup">Create New Account</a></p>
         </form>
+        <div id="message">
+
+        </div>
     </div>
     <script src="assets/js/validation.js"></script>
 </body>

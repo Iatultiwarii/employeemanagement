@@ -9,7 +9,6 @@ ob_start();?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/signup.js"></script>
 </head>
@@ -61,14 +60,12 @@ ob_start();?>
         <div id="qualifications">
             <input type="text" name="qualifications[]" placeholder="Enter Qualification" required>
         </div>
-        <button type="button" id="addQualification">Add More</button>
-        
+        <button type="button" id="addQualification">Add More</button> 
         <label>Experiences:</label>
         <div id="experiences">
             <input type="text" name="experiences[]" placeholder="Enter Experience" required>
         </div>
-        <button type="button" style="style:none" id="addExperience">Add More</button>
-        
+        <button type="button" style="style:none" id="addExperience">Add More</button> 
         <label>Permanent Address:</label>
         <input type="text" name="perm_address1" placeholder="Address Line 1" required>
         <input type="text" name="perm_address2" placeholder="Address Line 2">
@@ -79,7 +76,6 @@ ob_start();?>
             <option value="DELHI">DELHI</option>
             <option value="UK">UTTRAKHAND</option>
         </select>       
-        
         <label>Current Address:</label>
         <input type="text" name="curr_address1" placeholder="Address Line 1" required>
         <input type="text" name="curr_address2" placeholder="Address Line 2">
@@ -90,9 +86,11 @@ ob_start();?>
             <option value="DELHI">DELHI</option>
             <option value="UK">UTTRAKHAND</option>
         </select>
-        
         <p>Already have an account? <a href="index.php?route=login">Login here</a></p>
         <button type="submit">Sign Up</button>
     </form>
+    <div id="message">
+    </div>
+    <script src="assets/js/validation.js"></script>
 </body>
 </html>
